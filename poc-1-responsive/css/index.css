@@ -3,10 +3,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
+body{
+    position: relative;
+}
 header {
     width: 100%;
+    position: inherit;
 }
 
 a {
@@ -14,14 +19,28 @@ a {
     text-decoration: none;
 }
 
+
 .main_header {
     background-color: rgb(255, 196, 0);
+    position:relative;
 }
 
 .sub_header {
     background-color: rgb(196, 196, 196);
 }
 
+.main_sidebar_icon{
+    position: absolute;
+    left:10px;
+    line-height: inherit;
+    display:none;
+}
+.main_sidebar_icon div{
+    width:25px;
+    height:4px;
+    background-color:white;
+    margin:5px 0;
+}
 .main_content {
     width: 80%;
     margin: auto;
@@ -86,13 +105,12 @@ a {
     background-color: rgb(173, 173, 173);
     color: rgb(255, 200, 20);
 }
-
-.sub_contact a {
-    font-weight: bold;
+.sub_contact a{
     padding: 10px;
 }
-.sub_contact {
-    padding:10px;
+.sub_contact  {
+    font-weight: bold;
+    padding: 10px;
 }
 
 /* .sub_contact a::after,
@@ -106,29 +124,33 @@ a {
     margin:0 10px;
 } */
 main {
-    /* background-color: red; */
-    max-width: 1440px;
-    min-width: 100px;
-    margin: auto auto 20px auto;
+  width: 100%;
 }
-
+.body_image figure {
+    position: relative;
+    padding-bottom: 30%;
+}
 .body_image img {
+    position:absolute;
+    height:100%;
     width: 100%;
-    height: 300px;
 }
 
-.body_services {
+.container {
+    background-color:red;
     width: 80%;
-    margin: auto;
+    margin: auto auto 10px auto;
     margin-top: 10px;
     background-color: #eee;
     font-size: 0;
 }
-
+.body_services{
+    font-size:0;
+    width:100%;
+}
 .body_services .card {
     display: inline-block;
     width: 33.33%;
-    /* background-color:blue; */
     margin-top: 30px;
     padding:20px;
 }
@@ -200,6 +222,72 @@ main {
     background-color:rgba(0,0,0,0.5);
     color:white;
 }
-.footer_copyrights p {
+.footer_copyrights a,.footer_copyrights p {
+    color:white;
     font-size:13px;
+}
+
+.sub_icons{
+    display: none;
+}
+
+@media only screen and (max-width:570px){
+    .main_sidebar_icon{
+        display: block;
+    }
+    .main_content{
+        justify-content: center;
+    }
+    .main_icons{
+        display: none;
+    }
+    .main_header{
+        position: fixed;
+        width: 100%;
+    }
+    main{
+        margin-top: 50px;
+    }
+    .sub_icons{
+        display: block;
+    }
+    .sub_icons span{
+        font-size:20px;
+    }
+    .body_services .card{
+        width:100%;
+    }
+    figure img{
+        z-index: -1;
+    }
+    .sub_header{
+        height: 100vh;
+        width:80vh;
+        position: fixed;
+        top:50px;
+    }
+    .sub_header_show{
+        display:none;
+    }
+    .sub_content{
+        display: block;
+        padding:10px;
+        width:100%;
+        text-align: center;
+        
+    }
+    .sub_options ul li {
+        float: none;
+        padding:0;
+        padding:10px;
+    }
+    .sub_options ul li a{
+        padding:0;
+    }
+    .sub_contact{
+        padding:10px;
+    }
+    .footer_options{
+        display: none;
+    }
 }

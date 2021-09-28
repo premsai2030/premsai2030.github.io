@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" href="http://programz-exchange.epizy.com/pictures/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Dummy UI 2</title>
+</head>
+
+<body>
+    <header>
+        <div class="main_header">
+            <div class="main_content">
+                <div class="main_sidebar_icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="main_title">
+                    <h1><a href="#"><span class="fas fa-project-diagram"></span>My Site</a></h1>
+                </div>
+                <div class="main_icons">
+                    <a href="#"><span class="fab fa-facebook-square"></span></a>
+                    <a href="#"><span class="fab fa-linkedin"></span></a>
+                    <a href="#"><span class="fab fa-twitter-square"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="sub_header sub_header_show">
+            <div class="sub_content">
+                <nav class="sub_options">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <nav class="sub_contact">
+                    <a href="tel:7893601589"><span>Contact Us</span></a>
+                </nav>
+                <nav class="sub_icons">
+                    <a href="#"><span class="fab fa-facebook-square"></span></a>
+                    <a href="#"><span class="fab fa-linkedin"></span></a>
+                    <a href="#"><span class="fab fa-twitter-square"></span></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="body_image">
+            <figure>
+                <img src="images/ele.jfif" alt="">
+            </figure>
+        </div>
+        <div class="container">
+            <div class="body_services">
+                <div class="card">
+                    <div class="card_icon">
+                        <span class="fas fa-chart-area"></span>
+                    </div>
+                    <div class="card_title">
+                        <p>Business Intelligence</p>
+                    </div>
+                    <div class="card_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        </p>
+                    </div>
+                    <div class="card_button">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_icon">
+                        <span class="fas fa-cog"></span>
+                    </div>
+                    <div class="card_title">
+                        <p>DevOps</p>
+                    </div>
+                    <div class="card_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        </p>
+                    </div>
+                    <div class="card_button">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_icon">
+                        <span class="fas fa-mouse-pointer"></span>
+                    </div>
+                    <div class="card_title">
+                        <p>Automated Testing</p>
+                    </div>
+                    <div class="card_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        </p>
+                    </div>
+                    <div class="card_button">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_options">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer_copyrights">
+            <a href="#">Terms and Conditions</a> | <a href="#"> Privacy Notice</a>
+            <p>&copy;2016 My Site All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+        var main_sidebar_icon = document.getElementsByClassName('main_sidebar_icon')[0] ;
+        var sub_header = document.getElementsByClassName("sub_header")[0] ;
+        main_sidebar_icon.addEventListener('click', function(){
+            sub_header.classList.toggle("sub_header_show");
+                })
+    </script>
+</body>
+
+</html>
