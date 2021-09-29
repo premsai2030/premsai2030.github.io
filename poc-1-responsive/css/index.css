@@ -287,7 +287,8 @@ main {
     .sub_contact{
         padding:10px;
     }
-    .footer_options{
-        display: none;
+    .footer_options ul{
+        text-align: center;
+        flex-direction:column;
     }
 }
