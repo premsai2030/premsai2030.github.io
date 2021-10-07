@@ -1,0 +1,320 @@
+@import 'mixins';
+@import 'variables';
+
+header {
+    .links_nav {
+        background-color: $clr-black;
+
+        .content {
+            width: $width;
+
+            .content_details {
+                font-size: 0.8rem;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        margin: 0 10px;
+
+                        .content_icon {
+                            color: $clr-main;
+                        }
+
+                        .title {
+                            color: $nav-clr-text;
+                        }
+                    }
+                }
+            }
+
+            .social_media_icons {
+                a {
+                    margin: 0 5px;
+                    color: #93a2ad;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .main_nav {
+        .content {
+            width: $width;
+
+            .website_info {
+                ul {
+                    list-style: none;
+
+                }
+
+                .website_logo figure {
+                    margin: 0;
+
+                    img {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                    }
+                }
+
+                .website_title {
+                    span {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .nav_links {
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        line-height: 56px;
+
+                        a {
+                            color: $nav-clr-text;
+                            text-decoration: none;
+                            display: block;
+                            margin: 0 15px;
+                            font-size: 14px;
+
+                            &:hover {
+                                border-top: 3px solid $clr-main;
+                                color: $clr-main;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nav_options {
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        a {
+                            font-size: 20px;
+                            margin: 0 15px;
+                            color: $nav-clr-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .main_image {
+        position: relative;
+
+        figure {
+            padding-bottom: 40%;
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .main_content {
+            text-align: center;
+            position: absolute;
+            font-weight: bold;
+            font-size: 1.5rem;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            span {
+                color: $clr-white;
+
+                &:after {
+                    content: 'TO BUILD THE REAL VALUE';
+                    font-weight: bold;
+                    font-size: 3rem;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    .services {
+        width: $width;
+        margin: $common-margin;
+
+        .col {
+            padding: 0 15px;
+        }
+
+        .service_card {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            border: $clr-white;
+
+            .service_logo {
+                padding: 15px;
+
+                .logo {
+                    width: 40px;
+                    height: 40px;
+                    background-color: $clr-black;
+                    text-align: center;
+                    transform: rotate(45deg);
+
+                    span {
+                        line-height: 40px;
+                        color: $clr-white;
+                    }
+                }
+
+            }
+
+            .service_info {
+                text-align: left;
+                flex: 1;
+                padding: 10px;
+
+                p {
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: $nav-clr-text;
+                }
+
+                button {
+                    font-size: 13px;
+                    background-color: $clr-main;
+                    color: $clr-white;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            &:hover {
+                .service_logo .logo {
+                    background-color: $clr-main;
+                }
+
+                .service_info button {
+                    background-color: $clr-black;
+                }
+            }
+        }
+    }
+
+    .main_overview {
+        background-color: $random-boxes-clr;
+        padding: 100px 0;
+        margin: $common-margin;
+
+        .main_overview_content {
+
+            width: $width;
+            margin: auto;
+
+            .logo {
+                figure {
+                    padding: 10px;
+                    margin: 0;
+
+                    img {
+                        width: 400px;
+                        height: 200px;
+                    }
+                }
+            }
+
+            .content {
+                padding-left: 10px;
+
+                strong {
+                    font-size: 25px;
+                    color: $nav-clr-text;
+                }
+
+                p {
+                    margin-top: 10px;
+                    color: $nav-clr-text;
+                    font-size: 12px;
+                }
+
+                button {
+                    background-color: $clr-white;
+
+                    strong {
+                        font-size: 14px;
+
+                        &:after {
+                            content: ">";
+                            font-weight: bold;
+                            font-size: 18px;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .greatness {
+        .featured_works {
+            .content {
+                text-align: center;
+
+                strong {
+                    font-size: 25px;
+                    color: $nav-clr-text;
+                }
+
+                p {
+                    color: $nav-clr-text;
+                }
+
+                .options {
+                    button {
+                        border: 1px solid $nav-clr-text;
+                        color: $nav-clr-text;
+
+                        &:focus {
+                            box-shadow: none;
+                            background-color: $clr-black;
+                        }
+
+                        &:hover {
+                            color: $clr-main;
+                            border: 1px solid $clr-main;
+                        }
+                    }
+                }
+            }
+
+            .images {
+                margin:$common-margin ;
+                overflow-x:auto;
+                figure {
+                    margin: 0;
+
+                    img {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
