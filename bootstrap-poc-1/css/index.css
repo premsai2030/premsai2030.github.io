@@ -120,6 +120,8 @@ main .main_image figure img {
   position: absolute;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main .main_image .main_content {
@@ -279,6 +281,14 @@ main .main_overview .main_overview_content .content button strong {
   font-size: 14px;
 }
 
+main .main_overview .main_overview_content .content button strong span {
+  font-size: 18px;
+}
+
+main .main_overview .main_overview_content .content button strong span:before {
+  vertical-align: middle !important;
+}
+
 main .main_overview .main_overview_content .content button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -330,7 +340,7 @@ main .greatness .featured_works .images figure img {
 }
 
 main .greatness .featured_works .images::-webkit-scrollbar {
-  width: 3px;
+  height: 8px;
 }
 
 main .greatness .featured_works .images::-webkit-scrollbar-track {
@@ -372,17 +382,19 @@ main .greatness .testimonials .main_content .card {
 
 main .greatness .testimonials .main_content .card figure {
   margin: 0;
-  width: 400px;
+  width: 250px;
 }
 
 main .greatness .testimonials .main_content .card figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
 main .greatness .testimonials .main_content .card .info span {
   color: #abb3b4;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 main .greatness .testimonials .main_content p {
@@ -480,7 +492,7 @@ main .photography .photo figure img {
 main .photography .photo .content {
   padding: 40px 0;
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -612,6 +624,239 @@ main .some_fact_fun .content .options .options_info p {
   color: #abb3b4;
 }
 
+main .our_things {
+  margin: 40px auto;
+  background-color: #f9fafc;
+}
+
+main .our_things .content {
+  margin: auto;
+  width: 70%;
+  padding: 70px 0;
+}
+
+main .our_things .content .info {
+  margin-bottom: 30px;
+}
+
+main .our_things .content .info strong {
+  font-size: 20px;
+}
+
+main .our_things .content .info span {
+  display: block;
+  font-size: 12px;
+  color: #abb3b4;
+}
+
+main .our_things .content .slider_content {
+  margin-top: 20px;
+}
+
+main .our_things .content .slider_content .slider_div {
+  width: 100%;
+}
+
+main .our_things .content .slider_content .slider_div .slider_content strong {
+  font-size: 12px;
+  color: #abb3b4;
+}
+
+main .our_things .content .slider_content .slider_div .slider {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  border: 1px solid #abb3b4;
+}
+
+main .our_things .content .slider_content .slider_div .slider .filled_slider {
+  width: 80%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#33c6f8), to(#19e1bc));
+  background-image: linear-gradient(to right, #33c6f8, #19e1bc);
+}
+
+main .our_things .content .tabs_div {
+  background-color: white;
+}
+
+main .our_things .content .tabs_div .tabs {
+  width: 100%;
+}
+
+main .our_things .content .tabs_div .tabs .tab {
+  cursor: pointer;
+  border: 0.3px solid #abb3b4;
+  padding: 5px;
+  text-align: center;
+}
+
+main .our_things .content .tabs_div .tabs .tab strong {
+  font-size: 12px;
+  color: #abb3b4;
+}
+
+main .our_things .content .tabs_div .tabs .tab:not(:nth-child(4)) {
+  border-right-color: white;
+}
+
+main .our_things .content .tab_content {
+  padding: 12px;
+}
+
+main .our_things .content .tab_content figure {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+main .our_things .content .tab_content figure img {
+  width: 100%;
+  height: 100%;
+}
+
+main .our_things .content .tab_content .description {
+  padding: 0 10px;
+}
+
+main .our_things .content .tab_content .description span {
+  font-size: 12px;
+  color: #abb3b4;
+}
+
+main .latest_posts {
+  margin: 40px auto;
+}
+
+main .latest_posts .content {
+  width: 70%;
+  margin: auto;
+}
+
+main .latest_posts .content .info {
+  text-align: center;
+}
+
+main .latest_posts .content .info strong {
+  font-size: 25px;
+}
+
+main .latest_posts .content .info span {
+  font-size: 12px;
+  display: block;
+  color: #abb3b4;
+}
+
+main .latest_posts .content .posts {
+  margin-top: 30px;
+}
+
+main .latest_posts .content .posts .post {
+  cursor: pointer;
+}
+
+main .latest_posts .content .posts .post .icons .icon {
+  padding: 3px;
+  text-align: center;
+}
+
+main .latest_posts .content .posts .post .icons .icon span {
+  font-size: 12px;
+  color: white;
+}
+
+main .latest_posts .content .posts .post .icons .icon:nth-child(1) {
+  background-color: #1bbc9b;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .latest_posts .content .posts .post .icons .icon:nth-child(2) {
+  background-color: #34495e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .latest_posts .content .posts .post .icons .icon:nth-child(3) {
+  background-color: #34495e;
+}
+
+main .latest_posts .content .posts .post .icons .icon:nth-child(4) {
+  background-color: #34495e;
+  font-size: 10px;
+}
+
+main .latest_posts .content .posts .post .picture figure {
+  width: 220px;
+}
+
+main .latest_posts .content .posts .post .picture figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .latest_posts .content .posts .post .description {
+  background-color: #f4f5f7;
+  height: 132px;
+  padding: 0 10px;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .latest_posts .content .posts .post .description .cut {
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f4f5f7;
+  left: -10px;
+  top: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main .latest_posts .content .posts .post .description strong {
+  font-size: 12px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .latest_posts .content .posts .post .description span {
+  color: #ced6dc;
+  display: block;
+}
+
+main .latest_posts .content .posts .post .description span strong {
+  font-size: 10px;
+}
+
+main .latest_posts .content .posts .post .description span {
+  font-size: 10px;
+}
+
+main .latest_posts .content .posts .post:hover .icons .icon:nth-child(1) {
+  background-color: #34495e;
+}
+
+main .latest_posts .content .posts .post:hover .icons .icon:nth-child(2) {
+  background-color: #1bbc9b;
+}
+
+main .latest_posts .content .posts .post:hover .description {
+  background-color: #34495e;
+}
+
+main .latest_posts .content .posts .post:hover .description .cut {
+  background-color: #34495e;
+}
+
+main .latest_posts .content .posts .post:hover .description strong {
+  color: white;
+}
+
 main .thefox_design {
   background-color: #f9fafc;
   margin: 40px auto;
@@ -652,11 +897,12 @@ main .thefox_design .content .info button strong {
   color: #34495e;
 }
 
-main .thefox_design .content .info button strong:after {
-  content: ">";
-  font-weight: bold;
+main .thefox_design .content .info button strong span {
   font-size: 18px;
-  margin-left: 5px;
+}
+
+main .thefox_design .content .info button strong span::before {
+  vertical-align: middle !important;
 }
 
 main .thefox_design .content .info button:focus {
@@ -705,6 +951,15 @@ main .pricing_table .content .table .price {
   padding: 5px;
 }
 
+main .pricing_table .content .table .price strong {
+  font-size: 30px;
+}
+
+main .pricing_table .content .table .price strong sub,
+main .pricing_table .content .table .price strong sup {
+  font-size: 15px;
+}
+
 main .pricing_table .content .table .features .option {
   border: 1px solid #f5e9e9;
   padding: 5px;
@@ -746,9 +1001,74 @@ main .pricing_table .content .table:hover .footer button {
   background-color: #34495e;
 }
 
+main .pricing_table .content .table > :not(caption) > * > * {
+  padding: 0;
+}
+
 main .pricing_table .content .standard {
   -webkit-box-shadow: 2px 1px 20px grey;
           box-shadow: 2px 1px 20px grey;
+}
+
+main .explore_things {
+  margin: 40px auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+main .explore_things .main_image {
+  width: 100%;
+  position: absolute;
+}
+
+main .explore_things .main_image figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .explore_things .description {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .explore_things .description strong {
+  font-size: 25px;
+  color: white;
+}
+
+main .explore_things .description strong span {
+  display: inline;
+  font-size: 25px;
+  color: #1bbc9b;
+}
+
+main .explore_things .description p {
+  display: block;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+main .explore_things .sub_image {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .explore_things .sub_image figure {
+  width: 100%;
+}
+
+main .explore_things .sub_image figure img {
+  width: 100%;
 }
 
 main .featured_products {
@@ -806,7 +1126,7 @@ main .featured_products .content .cards .block .info {
 }
 
 main .featured_products .content .cards .block .info strong {
-  font-size: 15px;
+  font-size: 13px;
   display: block;
   -webkit-transition: 1s;
   transition: 1s;
@@ -820,6 +1140,7 @@ main .featured_products .content .cards .block .info .options a {
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
+  border-radius: 4px;
 }
 
 main .featured_products .content .cards .block .info .options a span {
@@ -827,6 +1148,10 @@ main .featured_products .content .cards .block .info .options a span {
   display: inline;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+main .featured_products .content .cards .block .info .options a span::before {
+  margin-bottom: 1px;
 }
 
 main .featured_products .content .cards .block:hover .info {
@@ -900,13 +1225,14 @@ main .form .content button:hover {
 main .advantages {
   margin: 40px auto;
   padding: 30px;
-  background-color: red;
+  background-image: url(../images/blurred.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 main .advantages .content {
   width: 70%;
   margin: auto;
-  background-color: red;
 }
 
 main .advantages .content .box {
@@ -1104,7 +1430,6 @@ footer .first_footer .info .posts .block .logo {
   margin-top: 10px;
   width: 25px;
   height: 25px;
-  background-color: blue;
   text-align: center;
 }
 
@@ -1127,6 +1452,18 @@ footer .first_footer .info .posts .block .info span {
   display: block;
   color: #abb3b4;
   font-size: 10px;
+}
+
+footer .first_footer .info .posts .block:nth-child(1) .logo {
+  background-color: brown;
+}
+
+footer .first_footer .info .posts .block:nth-child(2) .logo {
+  background-color: green;
+}
+
+footer .first_footer .info .posts .block:nth-child(3) .logo {
+  background-color: blue;
 }
 
 footer .first_footer .info hr {
@@ -1200,6 +1537,12 @@ footer .first_footer .tags_widget .content ul {
   list-style-type: none;
 }
 
+footer .first_footer .tags_widget .content ul li {
+  border-bottom: 1px solid #abb3b4;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
 footer .first_footer .tags_widget .content ul li a {
   font-size: 15px;
   color: #abb3b4;
@@ -1220,10 +1563,6 @@ footer .first_footer .tags_widget .content ul li a:before {
   content: '• ';
   color: #1bbc9b;
   font-size: 18px;
-}
-
-footer .first_footer .tags_widget .content ul li hr {
-  border: 1px solid #abb3b4;
 }
 
 footer .first_footer .contact_info strong:first-child {

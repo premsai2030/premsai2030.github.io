@@ -135,6 +135,7 @@ main {
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
 
@@ -283,6 +284,14 @@ main {
 
                     strong {
                         font-size: 14px;
+
+                        span {
+                            font-size: 18px;
+
+                            &:before {
+                                vertical-align: middle !important;
+                            }
+                        }
                     }
 
                     &:focus {
@@ -342,7 +351,7 @@ main {
                 }
 
                 &::-webkit-scrollbar {
-                    width: 3px;
+                    height: 8px;
                 }
 
                 &::-webkit-scrollbar-track {
@@ -386,9 +395,11 @@ main {
 
                     figure {
                         margin: 0;
-                        width: 400px;
+                        width: 250px;
 
+                        // height:90px;
                         img {
+                            object-fit: cover;
                             width: 100%;
                             height: 100%;
                         }
@@ -396,7 +407,7 @@ main {
 
                     .info span {
                         color: $nav-clr-text;
-                        font-size: 12px;
+                        font-size: 10px;
                     }
 
                 }
@@ -501,7 +512,7 @@ main {
             .content {
                 padding: 40px 0;
                 position: absolute;
-                top: 80%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-align: center;
@@ -620,6 +631,255 @@ main {
         }
     }
 
+    .our_things {
+        margin: $common-margin;
+        background-color: $random-boxes-clr;
+
+        .content {
+            margin: auto;
+            width: $width;
+            padding: 70px 0;
+
+            .info {
+                strong {
+                    font-size: 20px;
+                }
+
+                span {
+                    display: block;
+                    font-size: 12px;
+                    color: $nav-clr-text;
+                }
+
+                margin-bottom:30px;
+            }
+
+            .slider_content {
+                margin-top: 20px;
+
+                .slider_div {
+                    width: 100%;
+
+                    .slider_content {
+                        strong {
+                            font-size: 12px;
+                            color: $nav-clr-text;
+                        }
+                    }
+
+                    //#19e1bc
+                    //#33c6f8
+                    .slider {
+                        width: 100%;
+                        height: 10px;
+                        background-color: $clr-white;
+                        border: 1px solid $nav-clr-text;
+
+                        .filled_slider {
+                            width: 80%;
+                            height: 100%;
+                            background-image: linear-gradient(to right, #33c6f8, #19e1bc);
+                        }
+                    }
+                }
+            }
+
+            .tabs_div {
+                background-color: $clr-white;
+
+                .tabs {
+                    width: 100%;
+
+                    .tab {
+                        cursor: pointer;
+                        border: 0.3px solid $nav-clr-text;
+                        padding: 5px;
+                        text-align: center;
+
+                        strong {
+                            font-size: 12px;
+                            color: $nav-clr-text;
+                        }
+
+                        // &:nth-child(1){
+                        //     border-bottom-color:$clr-white;
+                        //     border-top:4px solid $clr-main ;
+                        // }
+                        &:not(:nth-child(4)) {
+                            border-right-color: $clr-white;
+                        }
+                    }
+                }
+            }
+
+            .tab_content {
+                padding: 12px;
+
+                figure {
+                    width: 80px;
+                    height: 80px;
+                    float: left;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .description {
+                    padding: 0 10px;
+
+                    span {
+                        font-size: 12px;
+                        color: $nav-clr-text;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .latest_posts {
+        margin: $common-margin;
+
+        .content {
+            width: $width;
+            margin: auto;
+
+            .info {
+                text-align: center;
+
+                strong {
+                    font-size: 25px;
+                }
+
+                span {
+                    font-size: 12px;
+                    display: block;
+                    color: $nav-clr-text;
+                }
+            }
+
+            .posts {
+                margin-top: 30px;
+
+                .post {
+                    cursor: pointer;
+
+                    .icons {
+                        .icon {
+                            padding: 3px;
+                            text-align: center;
+
+                            span {
+                                font-size: 12px;
+                                color: $clr-white;
+                            }
+
+                            &:nth-child(1) {
+                                background-color: $clr-main;
+                                transition: 1s;
+                            }
+
+                            &:nth-child(2) {
+                                background-color: $clr-black;
+                                transition: 1s;
+                            }
+
+                            &:nth-child(3) {
+                                background-color: $clr-black;
+                            }
+
+                            &:nth-child(4) {
+                                background-color: $clr-black;
+                                font-size: 10px;
+                            }
+                        }
+
+                    }
+
+                    .picture {
+                        figure {
+                            width: 220px;
+
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .description {
+                        background-color: #f4f5f7;
+                        height: 132px;
+                        padding: 0 10px;
+                        position: relative;
+                        transition: 1s;
+
+                        .cut {
+                            transition: 1s;
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            background-color: #f4f5f7;
+                            left: -10px;
+                            top: 30px;
+                            transform: rotate(45deg);
+                        }
+
+                        strong {
+                            font-size: 12px;
+                            transition: 1s;
+                        }
+
+                        span {
+                            color: #ced6dc;
+                            display: block;
+
+                            strong {
+                                font-size: 10px;
+                            }
+                        }
+
+                        span {
+                            font-size: 10px;
+                        }
+                    }
+
+                    &:hover {
+                        .icons {
+                            .icon {
+                                &:nth-child(1) {
+                                    background-color: $clr-black;
+                                    //transition: 1s;
+                                }
+
+                                &:nth-child(2) {
+                                    background-color: $clr-main;
+                                    //transition: 1s;
+                                }
+                            }
+                        }
+
+                        .description {
+                            .cut {
+                                background-color: $clr-black;
+                            }
+
+                            strong {
+                                color: $clr-white;
+                            }
+
+                            background-color:$clr-black;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
     .thefox_design {
         background-color: $random-boxes-clr;
         margin: $common-margin;
@@ -657,11 +917,12 @@ main {
                         font-size: 14px;
                         color: $clr-black;
 
-                        &:after {
-                            content: ">";
-                            font-weight: bold;
+                        span {
                             font-size: 18px;
-                            margin-left: 5px;
+
+                            &::before {
+                                vertical-align: middle !important;
+                            }
                         }
                     }
 
@@ -707,6 +968,15 @@ main {
                 .price {
                     background-color: $price-card-clr;
                     padding: 5px;
+
+                    strong {
+                        font-size: 30px;
+
+                        sub,
+                        sup {
+                            font-size: 15px;
+                        }
+                    }
                 }
 
                 .features {
@@ -749,10 +1019,75 @@ main {
                         background-color: $clr-black;
                     }
                 }
+
+                &>:not(caption)>*>* {
+                    padding: 0;
+                }
             }
 
             .standard {
                 box-shadow: 2px 1px 20px grey;
+            }
+        }
+    }
+
+    .explore_things {
+        margin: $common-margin;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .main_image {
+            width: 100%;
+            // height:90%;
+            position: absolute;
+
+            figure {
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .description {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            strong {
+                font-size: 25px;
+                color: $clr-white;
+
+                span {
+                    display: inline;
+                    font-size: 25px;
+                    color: $clr-main;
+                }
+            }
+
+            p {
+                display: block;
+                font-size: 12px;
+                color: $clr-white;
+                margin-bottom:20px;
+            }
+        }
+
+        .sub_image {
+            position: absolute;
+            top: 105px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            figure {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -804,8 +1139,9 @@ main {
                         padding: 10px;
                         text-align: left;
                         transition: 1s;
+
                         strong {
-                            font-size: 15px;
+                            font-size: 13px;
                             display: block;
                             transition: 1s;
                         }
@@ -818,35 +1154,44 @@ main {
                                 padding: 5px;
                                 color: $clr-white;
                                 transition: 1s;
+                                border-radius: 4px;
+
                                 span {
                                     color: white;
                                     display: inline;
                                     transition: 1s;
+
+                                    &::before {
+                                        margin-bottom: 1px;
+                                    }
                                 }
                             }
                         }
 
-                        
-                    }
-                    &:hover {
-                        .info{
-                            background-color: $clr-black;
-hr{
-    border: 1px solid grey;
-}
-                        strong {
-                            color: $clr-white;
-                        }
 
-                        .options {
-                            a:hover {
-                                background-color: $clr-main;
+                    }
+
+                    &:hover {
+                        .info {
+                            background-color: $clr-black;
+
+                            hr {
+                                border: 1px solid grey;
                             }
 
-                            a span {
+                            strong {
                                 color: $clr-white;
                             }
-                        }
+
+                            .options {
+                                a:hover {
+                                    background-color: $clr-main;
+                                }
+
+                                a span {
+                                    color: $clr-white;
+                                }
+                            }
                         }
                     }
                 }
@@ -906,12 +1251,13 @@ hr{
     .advantages {
         margin: $common-margin;
         padding: 30px;
-        background-color: red;
+        background-image: url(../images/blurred.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
 
         .content {
             width: $width;
             margin: auto;
-            background-color: red;
 
             .box {
                 cursor: pointer;
@@ -1113,13 +1459,13 @@ footer {
                         margin-top: 10px;
                         width: 25px;
                         height: 25px;
-                        background-color: blue;
                         text-align: center;
 
                         span {
                             color: white;
                             line-height: 24px;
                         }
+
                     }
 
                     .info {
@@ -1137,7 +1483,26 @@ footer {
                             font-size: 10px;
                         }
                     }
+
+                    &:nth-child(1) {
+                        .logo {
+                            background-color: brown;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .logo {
+                            background-color: green;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .logo {
+                            background-color: blue;
+                        }
+                    }
                 }
+
             }
 
             hr {
@@ -1217,8 +1582,11 @@ footer {
                     list-style-type: none;
 
                     li {
-                        a {
+                        border-bottom: 1px solid $nav-clr-text;
+                        padding: 10px;
+                        margin-bottom: 0;
 
+                        a {
                             font-size: 15px;
                             color: $nav-clr-text;
                             text-decoration: none;
@@ -1237,10 +1605,6 @@ footer {
                                 color: $clr-main;
                                 font-size: 18px;
                             }
-                        }
-
-                        hr {
-                            border: 1px solid $nav-clr-text;
                         }
                     }
                 }

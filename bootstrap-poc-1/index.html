@@ -3,13 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JS LINKS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS LINKS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
@@ -100,15 +109,35 @@
         </nav>
     </header>
     <main>
-        <div class="main_image">
-            <figure>
-                <img src="images/meeting.jpeg" alt="">
-            </figure>
-            <div class="main_content">
-                <span>We Are Working Hard To <br> </span>
+        <section class="main_image">
+            <div class="image_slider">
+                <div class="image_content">
+                    <figure>
+                        <img src="images/meeting.jpeg" alt="">
+                    </figure>
+                    <!-- <div class="main_content">
+                        <span>We Are Working Hard To <br> </span>
+                    </div> -->
+                </div>
+                <div class="image_content">
+                    <figure>
+                        <img src="images/meeting.jpeg" alt="">
+                    </figure>
+                    <!-- <div class="main_content">
+                        <span>We Are Working Hard To <br> </span>
+                    </div> -->
+                </div>
+                <div class="image_content">
+                    <figure>
+                        <img src="images/meeting.jpeg" alt="">
+                    </figure>
+                    <!-- <div class="main_content">
+                        <span>We Are Working Hard To <br> </span>
+                    </div> -->
+                </div>
             </div>
-        </div>
-        <div class="container services">
+        </section>
+        <section class="container services">
             <div class="row">
                 <div class="col">
                     <div class="card service_card">
@@ -137,7 +166,7 @@
                             <strong>Best for SEO</strong>
                             <p>
                                 Lorem Ipsumwhen an unknown printer took a galley of type it to make a type speci
-                             </p>
+                            </p>
                             <button class="btn">Read More</button>
                         </div>
                     </div>
@@ -159,8 +188,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main_overview">
+        </section>
+        <section class="main_overview">
             <div class="main_overview_content d-flex justify-content-center">
                 <div class="logo">
                     <figure>
@@ -183,8 +212,8 @@
                     <button class="btn"><strong>VIEW MORE <span class="bi bi-chevron-right"></span></strong></button>
                 </div>
             </div>
-        </div>
-        <div class="greatness">
+        </section>
+        <section class="greatness">
             <div class="featured_works">
                 <div class="content">
                     <strong>FEATURED WORKS</strong>
@@ -228,7 +257,10 @@
                                     <img src="images/mark.jpg" alt="">
                                 </figure>
                                 <div class="info p-2">
-                                    <span>It is a long at its layout. The point of using LoremIpsum It is a long at its layout. The point of using LoremIpsum It is a long at its layout. The point of using LoremIpsum It is a long at its layout. The point of using LoremIpsum</span>
+                                    <span>It is a long at its layout. The point of using LoremIpsum It is a long at its
+                                        layout. The point of using LoremIpsum It is a long at its layout. The point of
+                                        using LoremIpsum It is a long at its layout. The point of using
+                                        LoremIpsum</span>
                                 </div>
                             </div>
                             <strong>Prem Sai Vittal</strong>
@@ -237,90 +269,108 @@
                         <div class="col logos">
                             <div class="row">
                                 <div class="col-4">
-                                    <figure>
-                                        <img src="images/logo-1.png" alt="">
-                                    </figure>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/logo-1.png" alt="">
+                                        </figure>
+                                    </a>
                                 </div>
                                 <div class="col-4">
-                                    <figure>
-                                        <img src="images/logo-2.png" alt="">
-                                    </figure>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/logo-4.png" alt="">
+                                        </figure>
+                                    </a>
                                 </div>
                                 <div class="col-4">
-                                    <figure>
-                                        <img src="images/logo-3.png" alt="">
-                                    </figure>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/logo-2.png" alt="">
+                                        </figure>
+                                    </a>
                                 </div>
                                 <div class="col-4">
-                                    <figure>
-                                        <img src="images/logo-4.png" alt="">
-                                    </figure>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/logo-4.png" alt="">
+                                        </figure>
+                                    </a>
                                 </div>
                                 <div class="col-4">
-                                    <figure>
-                                        <img src="images/logo-1.png" alt="">
-                                    </figure>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/logo-2.png" alt="">
+                                        </figure>
+                                    </a>
                                 </div>
                                 <div class="col-4">
-                                    <figure>
-                                        <img src="images/logo-2.png" alt="">
-                                    </figure>
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/logo-1.png" alt="">
+                                        </figure>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="amazing_psd_pack d-flex justify-content-center">
-           <div class="row">
-               <div class="col">
-                <div class="content">
-                    <strong>AMAZING PSD PACKS</strong>
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a 
-                        page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution 
-                        uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
-                    </p>
-                    <p>
-                        of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop 
-                        publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
-                        will 
-                    </p>
-                    <p>
-                        of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop 
-                        publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
-                        will 
-                    </p>
-                    <button class="btn btn-light"><strong>VIEW MORE</strong></button>
-                   </div>
-               </div>
-               <div class="col d-flex amazing_img justify-content-center align-items-center">
-                   <figure>
-                       <img src="images/amazing.png" alt="">
-                   </figure>
-               </div>
-           </div>
-        </div>
-        <div class="photography">
+        </section>
+        <section class="amazing_psd_pack d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <strong>AMAZING PSD PACKS</strong>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution
+                            uncover many web sites still in their infancy. Various versions have evolved over the years,
+                            sometimes by
+                        </p>
+                        <p>
+                            of letters, as opposed to using 'Content here, content here', making it look like readable
+                            English. Many desktop
+                            publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                            and a search for 'lorem ipsum'
+                            will
+                        </p>
+                        <p>
+                            of letters, as opposed to using 'Content here, content here', making it look like readable
+                            English. Many desktop
+                            publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                            and a search for 'lorem ipsum'
+                            will
+                        </p>
+                        <button class="btn btn-light"><strong>VIEW MORE</strong></button>
+                    </div>
+                </div>
+                <div class="col d-flex amazing_img justify-content-center align-items-center">
+                    <figure>
+                        <img src="images/amazing.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="photography">
             <div class="photo">
                 <figure>
                     <img src="images/photo.jpg" alt="">
                 </figure>
-                <div class="content" >
-                       <div class="logo_div">
+                <div class="content">
+                    <div class="logo_div">
                         <div class="logo">
                             <span class="bi bi-twitter"></span>
                         </div>
-                       </div>
+                    </div>
                     <div>
                         <p>This is awsome work. <span>So clean and professional</span> <br>Everytime to release a new
                             design I am impressed than the last one . Congratulations !</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="some_fact_fun">
+        </section>
+        <section class="some_fact_fun">
             <div class="content">
                 <div class="info">
                     <strong>SOME FUN FACT</strong>
@@ -383,10 +433,307 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="our_things"></div>
-        <div class="latest_posts"></div>
-        <div class="thefox_design">
+        </section>
+        <section class="our_things">
+            <div class="content">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="info">
+                            <strong>
+                                OUR SKILLS
+                            </strong>
+                            <span>
+                                sfvhjf hfs shs vsv dhs vhs sd k sd chA FHF KSAD skfbgi figifadnfadfasfajf afbiawfads
+                                foasdfisad
+                            </span>
+                        </div>
+                        <div class="slider_content">
+                            <div class="slider_div">
+                                <div class="slider_content d-flex justify-content-between">
+                                    <strong>Adobe Photoshop</strong>
+                                    <strong>90%</strong>
+                                </div>
+                                <div class="slider">
+                                    <div class="filled_slider">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider_div">
+                                <div class="slider_content d-flex justify-content-between">
+                                    <strong>Wordpress Theme</strong>
+                                    <strong>90%</strong>
+                                </div>
+                                <div class="slider">
+                                    <div class="filled_slider">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider_div">
+                                <div class="slider_content d-flex justify-content-between">
+                                    <strong>Photography</strong>
+                                    <strong>90%</strong>
+                                </div>
+                                <div class="slider">
+                                    <div class="filled_slider">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider_div">
+                                <div class="slider_content d-flex justify-content-between">
+                                    <strong>JavaScript</strong>
+                                    <strong>90%</strong>
+                                </div>
+                                <div class="slider">
+                                    <div class="filled_slider">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="info">
+                            <strong>
+                                OUR SERVICES
+                            </strong>
+                            <span>
+                                sfvhjf hfs shs vsv dhs vhs sd k sd chA FHF KSAD skfbgi figifadnfadfasfajf afbiawfads
+                                foasdfisad
+                            </span>
+                        </div>
+                        <div class="tabs_div">
+                            <div class="tabs d-flex justify-content-between" id="tabs">
+                                <div class="tab flex-grow-1" data-id="1">
+                                    <strong>Online Service</strong>
+                                </div>
+                                <div class="tab flex-grow-1" data-id="2">
+                                    <strong>Your Service Title</strong>
+                                </div>
+                                <div class="tab flex-grow-1" data-id="3">
+                                    <strong>Photography</strong>
+                                </div>
+                                <div class="tab flex-grow-1" data-id="4">
+                                    <strong>Web Design</strong>
+                                </div>
+                            </div>
+                            <div class="tab_content d-flex">
+                                <div>
+                                    <figure>
+                                        <img src="images/mark.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="description">
+                                    <span>
+                                        <strong id="tabId">1</strong> It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when looking at its layout. The
+                                        point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                        letters, as opposed to using
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="info">
+                            <strong>
+                                OUR SKILLS
+                            </strong>
+                            <span>
+                                sfvhjf hfs shs vsv dhs vhs sd k sd chA FHF KSAD skfbgi figifadnfadfasfajf afbiawfads
+                                foasdfisad
+                            </span>
+                        </div>
+                        <div class="video">
+                            <video width="200" controls>
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                <source src="mov_bbb.ogg" type="video/ogg">
+
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest_posts">
+            <div class="content">
+                <div class="info">
+                    <strong>
+                        LATEST POSTS
+                    </strong>
+                    <span>NCSKvbjksaf dfjkbvfd fjkvfd k df b</span>
+                    <span>NCSKvbjksaf dfjkbvfd fjkvfd k df bKFSBjiadfgbd</span>
+
+                </div>
+                <div class="posts">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="post d-flex flex-row">
+                                <div class="icons d-flex flex-column">
+                                    <div class="icon">
+                                        <span class="bi bi-alarm"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-person-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-heart-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span>
+                                            24<br>Jun
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <figure>
+                                        <img src="images/mark.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="description">
+                                    <div class="cut">
+
+                                    </div>
+                                    <strong>
+                                        Your Blog Title Here
+                                    </strong>
+                                    <span>
+                                        <strong>Web Design</strong>
+                                    </span>
+                                    <span>
+                                        jkgbjeir ijv fv if is sdfs fjksfs jvbsbvsfn ss v si vifhiosdfs fjksfs jvbsbvsfn
+                                        ss v si visdbfsdafhiosdfs fjksfs jvbsbvsfn ss v si visdbsdfs fjksfs jvbsbvsfn ss
+                                        v si viosdfs fjksfs jvbsbvsfn sjbfsn s sjfbsksjkvbskjfs fjkbss jsfsfsnfosd
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="post d-flex flex-row">
+                                <div class="icons d-flex flex-column">
+                                    <div class="icon">
+                                        <span class="bi bi-alarm"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-person-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-heart-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span>
+                                            24<br>Jun
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <figure>
+                                        <img src="images/mark.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="description">
+                                    <div class="cut">
+
+                                    </div>
+                                    <strong>
+                                        Your Blog Title Here
+                                    </strong>
+                                    <span>
+                                        <strong>Web Design</strong>
+                                    </span>
+                                    <span>
+                                        jkgbjeir ijv fv if is sdfs fjksfs jvbsbvsfn ss v si vifhiosdfs fjksfs jvbsbvsfn
+                                        ss v si visdbfsdafhiosdfs fjksfs jvbsbvsfn ss v si visdbsdfs fjksfs jvbsbvsfn ss
+                                        v si viosdfs fjksfs jvbsbvsfn sjbfsn s sjfbsksjkvbskjfs fjkbss jsfsfsnfosd
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="post d-flex flex-row">
+                                <div class="icons d-flex flex-column">
+                                    <div class="icon">
+                                        <span class="bi bi-alarm"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-person-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-heart-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span>
+                                            24<br>Jun
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <figure>
+                                        <img src="images/mark.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="description">
+                                    <div class="cut">
+
+                                    </div>
+                                    <strong>
+                                        Your Blog Title Here
+                                    </strong>
+                                    <span>
+                                        <strong>Web Design</strong>
+                                    </span>
+                                    <span>
+                                        jkgbjeir ijv fv if is sdfs fjksfs jvbsbvsfn ss v si vifhiosdfs fjksfs jvbsbvsfn
+                                        ss v si visdbfsdafhiosdfs fjksfs jvbsbvsfn ss v si visdbsdfs fjksfs jvbsbvsfn ss
+                                        v si viosdfs fjksfs jvbsbvsfn sjbfsn s sjfbsksjkvbskjfs fjkbss jsfsfsnfosd
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="post d-flex flex-row">
+                                <div class="icons d-flex flex-column">
+                                    <div class="icon">
+                                        <span class="bi bi-alarm"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-person-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span class="bi bi-heart-fill"></span>
+                                    </div>
+                                    <div class="icon">
+                                        <span>
+                                            24<br>Jun
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <figure>
+                                        <img src="images/mark.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="description">
+                                    <div class="cut">
+
+                                    </div>
+                                    <strong>
+                                        Your Blog Title Here
+                                    </strong>
+                                    <span>
+                                        <strong>Web Design</strong>
+                                    </span>
+                                    <span>
+                                        jkgbjeir ijv fv if is sdfs fjksfs jvbsbvsfn ss v si vifhiosdfs fjksfs jvbsbvsfn
+                                        ss v si visdbfsdafhiosdfs fjksfs jvbsbvsfn ss v si visdbsdfs fjksfs jvbsbvsfn ss
+                                        v si viosdfs fjksfs jvbsbvsfn sjbfsn s sjfbsksjkvbskjfs fjkbss jsfsfsnfosd
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thefox_design">
             <div class="content d-flex">
                 <div class="logo">
                     <figure>
@@ -407,11 +754,11 @@
                     <p>lorem ipsum d sit amet, consectetuer adipiscing elit in culpa qui
                         officia deserunt mollit anim id est labor
                     </p>
-                    <button class="btn"><strong>VIEW MORE</strong></button>
+                    <button class="btn"><strong>VIEW MORE <span class="bi bi-chevron-right"></span></strong></button>
                 </div>
             </div>
-        </div>
-        <div class="pricing_table">
+        </section>
+        <section class="pricing_table">
             <div class="content">
                 <div class="info">
                     <strong>PRICING TABLE</strong>
@@ -428,6 +775,18 @@
                             <div class="features">
                                 <div class="option">
                                     <span>1 Hosting</span>
+                                </div>
+                                <div class="option">
+                                    <span>2 Email Marketings</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Databases</span>
+                                </div>
+                                <div class="option">
+                                    <span>2 Design Packs</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Header Style</span>
                                 </div>
                                 <div class="option">
                                     <span>2 Email Marketings</span>
@@ -471,6 +830,18 @@
                                 <div class="option">
                                     <span>5 Header Style</span>
                                 </div>
+                                <div class="option">
+                                    <span>2 Email Marketings</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Databases</span>
+                                </div>
+                                <div class="option">
+                                    <span>2 Design Packs</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Header Style</span>
+                                </div>
                             </div>
                             <div class="footer">
                                 <button class="btn"><strong>BUY NOW</strong></button>
@@ -488,6 +859,18 @@
                             <div class="features">
                                 <div class="option">
                                     <span>1 Hosting</span>
+                                </div>
+                                <div class="option">
+                                    <span>2 Email Marketings</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Databases</span>
+                                </div>
+                                <div class="option">
+                                    <span>2 Design Packs</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Header Style</span>
                                 </div>
                                 <div class="option">
                                     <span>2 Email Marketings</span>
@@ -531,6 +914,18 @@
                                 <div class="option">
                                     <span>5 Header Style</span>
                                 </div>
+                                <div class="option">
+                                    <span>2 Email Marketings</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Databases</span>
+                                </div>
+                                <div class="option">
+                                    <span>2 Design Packs</span>
+                                </div>
+                                <div class="option">
+                                    <span>5 Header Style</span>
+                                </div>
                             </div>
                             <div class="footer">
                                 <button class="btn"><strong>BUY NOW</strong></button>
@@ -539,9 +934,27 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="explore_things"></div>
-        <div class="featured_products">
+        </section>
+        <section class="explore_things">
+            <div class="main_image">
+                <figure>
+                    <img src="images/building.jpg" alt="">
+                </figure>
+            </div>
+            <div class="description">
+                <strong>
+                    ARE YOU READY TO EXPLORE <span>WONDERFUL</span> THINGS
+                </strong>
+                <p>fdkjvbjfv fjbj vjsbvs vjsvjsv js vsv js vsv sj vjsjv sv skjv j vkjs vj svsf</p>
+            </div>
+            <div class="sub_image">
+                <figure>
+                    <img src="images/creative.jpg" alt="">
+                </figure>
+            </div>
+
+        </section>
+        <section class="featured_products">
             <div class="content">
                 <strong>FEATURED PRODUCTS</strong>
                 <span>jbvjfvbsfjvb svjsbvskjdbv sjvbsdjkvbsdk svjsdjkv</span>
@@ -639,8 +1052,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="form">
+        </section>
+        <section class="form">
             <div class="content">
                 <form action="">
                     <div class="row">
@@ -654,20 +1067,20 @@
                             <input type="text" placeholder="Subject">
                         </div>
                     </div>
-                    <textarea name="" id=""  rows="5"></textarea>
+                    <textarea name="" id="" rows="5"></textarea>
                     <button><strong>SUBMIT NOW</strong></button>
                 </form>
             </div>
-        </div>
-        <div class="advantages">
+        </section>
+        <section class="advantages">
             <div class="content">
                 <div class="row">
                     <div class="col-4">
                         <div class="box">
                             <div class="icon">
-                               <div class="outer_layer">
-                                <span class="bi bi-gear"></span>
-                               </div>
+                                <div class="outer_layer">
+                                    <span class="bi bi-gear"></span>
+                                </div>
                             </div>
                             <div class="data">
                                 <strong>Easy To Customize</strong>
@@ -680,9 +1093,9 @@
                     <div class="col-4">
                         <div class="box">
                             <div class="icon">
-                               <div class="outer_layer">
-                                <span class="bi bi-lightbulb"></span>
-                               </div>
+                                <div class="outer_layer">
+                                    <span class="bi bi-lightbulb"></span>
+                                </div>
                             </div>
                             <div class="data">
                                 <strong>Easy To Customize</strong>
@@ -695,9 +1108,9 @@
                     <div class="col-4">
                         <div class="box">
                             <div class="icon">
-                               <div class="outer_layer">
-                                <span class="bi bi-laptop"></span>
-                               </div>
+                                <div class="outer_layer">
+                                    <span class="bi bi-laptop"></span>
+                                </div>
                             </div>
                             <div class="data">
                                 <strong>Easy To Customize</strong>
@@ -709,18 +1122,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sometext">
+        </section>
+        <section class="sometext">
             <div class="content">
                 <p>
                     there will be alot of of thingsthere will be alot of thingsthere will be alot of thingsthere will be
                     alot of things
                 </p>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <div class="first_footer">
+        <section class="first_footer">
             <div class="small_division"></div>
             <div class="content">
                 <div class="row">
@@ -826,8 +1239,9 @@
                                     <img src="images/firefox.png" alt="">
                                     <div>
                                         <strong>Your Title Blog Here</strong>
-                                    <span>jfksvbjsf jslvbsfob dkjsfbkw jsbj vjsdbds vjsbvjd dsfvidas dk ad davdasvda ds jdvidb</span>
-                                    <strong>23 Dcember 2017</strong>
+                                        <span>jfksvbjsf jslvbsfob dkjsfbkw jsbj vjsdbds vjsbvjd dsfvidas dk ad davdasvda
+                                            ds jdvidb</span>
+                                        <strong>23 Dcember 2017</strong>
                                     </div>
                                 </div>
                                 <hr>
@@ -835,8 +1249,9 @@
                                     <img src="images/firefox.png" alt="">
                                     <div>
                                         <strong>Your Title Blog Here</strong>
-                                    <span>jfksvbjsf jslvbsfob dkjsfbkw jsbj vjsdbds vjsbvjd dsfvidas dk ad davdasvda ds jdvidb</span>
-                                    <strong>23 Dcember 2017</strong>
+                                        <span>jfksvbjsf jslvbsfob dkjsfbkw jsbj vjsdbds vjsbvjd dsfvidas dk ad davdasvda
+                                            ds jdvidb</span>
+                                        <strong>23 Dcember 2017</strong>
                                     </div>
                                 </div>
                                 <hr>
@@ -844,8 +1259,9 @@
                                     <img src="images/firefox.png" alt="">
                                     <div>
                                         <strong>Your Title Blog Here</strong>
-                                    <span>jfksvbjsf jslvbsfob dkjsfbkw jsbj vjsdbds vjsbvjd dsfvidas dk ad davdasvda ds jdvidb</span>
-                                    <strong>23 Dcember 2017</strong>
+                                        <span>jfksvbjsf jslvbsfob dkjsfbkw jsbj vjsdbds vjsbvjd dsfvidas dk ad davdasvda
+                                            ds jdvidb</span>
+                                        <strong>23 Dcember 2017</strong>
                                     </div>
                                 </div>
                             </div>
@@ -875,19 +1291,15 @@
                                 <ul>
                                     <li>
                                         <a href="#">web design resouces</a>
-                                        <hr>
                                     </li>
                                     <li>
                                         <a href="#">help center</a>
-                                        <hr>
                                     </li>
                                     <li>
                                         <a href="#">download center</a>
-                                        <hr>
                                     </li>
                                     <li>
                                         <a href="#">user accont</a>
-                                        <hr>
                                     </li>
                                 </ul>
                             </div>
@@ -925,8 +1337,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="last_footer">
+        </section>
+        <section class="last_footer">
             <div class="content d-flex  align-items-baseline">
                 <div class="main_things">
                     <ul class="d-flex">
@@ -977,10 +1389,11 @@
                     </ul>
                 </div>
             </div>
-        </div>
+            </div>
     </footer>
-    
+
     <script src="js/index.js"></script>
+    <script src="js/slick.js"></script>
 </body>
 
 </html>
