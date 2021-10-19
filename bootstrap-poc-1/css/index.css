@@ -461,14 +461,14 @@ main .amazing_psd_pack .row .content button {
 
 main .amazing_psd_pack .row .content button strong {
   font-size: 14px;
-  color: #34495e;
 }
 
-main .amazing_psd_pack .row .content button strong:after {
-  content: ">";
-  font-weight: bold;
+main .amazing_psd_pack .row .content button strong span {
   font-size: 18px;
-  margin-left: 5px;
+}
+
+main .amazing_psd_pack .row .content button strong span:before {
+  vertical-align: middle !important;
 }
 
 main .amazing_psd_pack .row .content button:focus {
@@ -476,126 +476,118 @@ main .amazing_psd_pack .row .content button:focus {
           box-shadow: none;
 }
 
-main .amazing_psd_pack .row .amazing_img figure {
+main .amazing_psd_pack .amazing_img figure {
   margin: 0;
   width: 200px;
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
 }
 
-main .amazing_psd_pack .row .amazing_img figure img {
+main .amazing_psd_pack .amazing_img figure img {
   width: 100%;
   height: 100%;
 }
 
-main .photography .photo {
+.photography {
+  background-image: url(../images/coding-1.jpg);
+  width: 100%;
+  background-size: 100%;
+  position: relative;
+  padding: 100px 0;
+}
+
+.photography:before {
+  content: '';
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  opacity: 0.6;
+}
+
+.photography .twitter_posts {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   position: relative;
 }
 
-main .photography .photo .photography_images .slick-prev {
-  z-index: 3;
-  left: 48%;
+.photography .twitter_posts .slick-next,
+.photography .twitter_posts .slick-prev {
+  margin-top: 20px;
+  top: 100%;
 }
 
-main .photography .photo .photography_images .slick-next {
-  z-index: 3;
-  right: 48%;
+.photography .twitter_posts .slick-prev {
+  left: 43%;
 }
 
-main .photography .photo .photography_images .slick-prev,
-main .photography .photo .photography_images .slick-next {
-  top: 80%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.photography .twitter_posts .slick-next {
+  right: 43%;
 }
 
-main .photography .photo .photography_images .photography_image figure {
+.photography .twitter_posts .twitter_post {
   position: relative;
-  padding-bottom: 40%;
 }
 
-main .photography .photo .photography_images .photography_image figure img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main .photography .photo .photography_images .photography_image figure::before {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  background-color: #34495e;
-  opacity: 0.7;
-  width: 100%;
-  height: 100%;
-}
-
-main .photography .photo .content {
-  padding: 40px 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 3;
-}
-
-main .photography .photo .content .logo {
-  width: 100px;
+.photography .twitter_posts .twitter_post .twitter_icon {
+  margin: auto;
+  border: 2px solid white;
   height: 100px;
-  border: 1px solid white;
+  width: 100px;
   text-align: center;
   border-radius: 50%;
-  margin: auto;
 }
 
-main .photography .photo .content .logo span {
-  line-height: 95px;
-  margin: 0;
+.photography .twitter_posts .twitter_post .twitter_icon span {
+  line-height: 100px;
   font-size: 30px;
   color: white;
 }
 
-main .photography .photo .content p {
-  margin: 20px;
+.photography .twitter_posts .twitter_post .content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.photography .twitter_posts .twitter_post .content p {
+  font-size: 15px;
   color: white;
 }
 
-main .photography .photo .content p span {
+.photography .twitter_posts .twitter_post .content p span {
   color: #1bbc9b;
 }
 
-main .some_fact_fun {
+.some_fact_fun {
   margin: 40px auto;
 }
 
-main .some_fact_fun .content {
+.some_fact_fun .content {
   width: 70%;
   margin: 40px auto;
 }
 
-main .some_fact_fun .content .info {
+.some_fact_fun .content .info {
   text-align: center;
 }
 
-main .some_fact_fun .content .info strong {
+.some_fact_fun .content .info strong {
   color: #abb3b4;
   font-size: 30px;
 }
 
-main .some_fact_fun .content .info p {
+.some_fact_fun .content .info p {
   color: #abb3b4;
   font-size: 12px;
 }
 
-main .some_fact_fun .content .options {
+.some_fact_fun .content .options {
   margin: 40px auto;
 }
 
-main .some_fact_fun .content .options .logo_top {
+.some_fact_fun .content .options .logo_top {
   cursor: pointer;
   width: 120px;
   height: 120px;
@@ -613,7 +605,7 @@ main .some_fact_fun .content .options .logo_top {
           align-items: center;
 }
 
-main .some_fact_fun .content .options .logo_top .logo_second {
+.some_fact_fun .content .options .logo_top .logo_second {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -630,7 +622,7 @@ main .some_fact_fun .content .options .logo_top .logo_second {
   transition: 1s;
 }
 
-main .some_fact_fun .content .options .logo_top .logo_second .logo_final {
+.some_fact_fun .content .options .logo_top .logo_second .logo_final {
   text-align: center;
   width: 60px;
   height: 60px;
@@ -641,216 +633,216 @@ main .some_fact_fun .content .options .logo_top .logo_second .logo_final {
   transition: 1s;
 }
 
-main .some_fact_fun .content .options .logo_top .logo_second .logo_final span {
+.some_fact_fun .content .options .logo_top .logo_second .logo_final span {
   line-height: 60px;
   font-size: 25px;
   color: white;
 }
 
-main .some_fact_fun .content .options .logo_top .logo_second .logo_final span::before {
+.some_fact_fun .content .options .logo_top .logo_second .logo_final span::before {
   line-height: inherit;
 }
 
-main .some_fact_fun .content .options .logo_top:hover {
+.some_fact_fun .content .options .logo_top:hover {
   border: 2px solid #34495e;
 }
 
-main .some_fact_fun .content .options .logo_top:hover .logo_second,
-main .some_fact_fun .content .options .logo_top:hover .logo_final {
+.some_fact_fun .content .options .logo_top:hover .logo_second,
+.some_fact_fun .content .options .logo_top:hover .logo_final {
   background-color: #34495e;
 }
 
-main .some_fact_fun .content .options .options_info {
+.some_fact_fun .content .options .options_info {
   margin-top: 10px;
 }
 
-main .some_fact_fun .content .options .options_info strong {
+.some_fact_fun .content .options .options_info strong {
   font-size: 25px;
 }
 
-main .some_fact_fun .content .options .options_info p {
+.some_fact_fun .content .options .options_info p {
   font-size: 12px;
   color: #abb3b4;
 }
 
-main .our_things {
+.our_things {
   margin: 40px auto;
   background-color: #f9fafc;
 }
 
-main .our_things .content {
+.our_things .content {
   margin: auto;
   width: 70%;
   padding: 70px 0;
 }
 
-main .our_things .content .info {
+.our_things .content .info {
   margin-bottom: 30px;
 }
 
-main .our_things .content .info strong {
+.our_things .content .info strong {
   font-size: 20px;
 }
 
-main .our_things .content .info span {
+.our_things .content .info span {
   display: block;
   font-size: 12px;
   color: #abb3b4;
 }
 
-main .our_things .content .slider_content {
+.our_things .content .slider_content {
   margin-top: 20px;
 }
 
-main .our_things .content .slider_content .slider_div {
+.our_things .content .slider_content .slider_div {
   width: 100%;
 }
 
-main .our_things .content .slider_content .slider_div .slider_content strong {
+.our_things .content .slider_content .slider_div .slider_content strong {
   font-size: 12px;
   color: #abb3b4;
 }
 
-main .our_things .content .slider_content .slider_div .slider {
+.our_things .content .slider_content .slider_div .slider {
   width: 100%;
   height: 10px;
   background-color: white;
   border: 1px solid #abb3b4;
 }
 
-main .our_things .content .slider_content .slider_div .slider .filled_slider {
+.our_things .content .slider_content .slider_div .slider .filled_slider {
   width: 80%;
   height: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#33c6f8), to(#19e1bc));
   background-image: linear-gradient(to right, #33c6f8, #19e1bc);
 }
 
-main .our_things .content .tabs_div {
+.our_things .content .tabs_div {
   background-color: white;
 }
 
-main .our_things .content .tabs_div .tabs {
+.our_things .content .tabs_div .tabs {
   width: 100%;
 }
 
-main .our_things .content .tabs_div .tabs .tab {
+.our_things .content .tabs_div .tabs .tab {
   cursor: pointer;
   border: 0.3px solid #abb3b4;
   padding: 5px;
   text-align: center;
 }
 
-main .our_things .content .tabs_div .tabs .tab strong {
+.our_things .content .tabs_div .tabs .tab strong {
   font-size: 12px;
   color: #abb3b4;
 }
 
-main .our_things .content .tabs_div .tabs .tab:not(:nth-child(4)) {
+.our_things .content .tabs_div .tabs .tab:not(:nth-child(4)) {
   border-right-color: white;
 }
 
-main .our_things .content .tabs_div .tabs .active {
+.our_things .content .tabs_div .tabs .active {
   border-top: 4px solid #1bbc9b;
   border-bottom-color: white;
 }
 
-main .our_things .content .tab_content {
+.our_things .content .tab_content {
   padding: 12px;
 }
 
-main .our_things .content .tab_content figure {
+.our_things .content .tab_content figure {
   width: 80px;
   height: 80px;
   float: left;
 }
 
-main .our_things .content .tab_content figure img {
+.our_things .content .tab_content figure img {
   width: 100%;
   height: 100%;
 }
 
-main .our_things .content .tab_content .description {
+.our_things .content .tab_content .description {
   padding: 0 10px;
 }
 
-main .our_things .content .tab_content .description span {
+.our_things .content .tab_content .description span {
   font-size: 12px;
   color: #abb3b4;
 }
 
-main .latest_posts {
+.latest_posts {
   margin: 40px auto;
 }
 
-main .latest_posts .content {
+.latest_posts .content {
   width: 70%;
   margin: auto;
 }
 
-main .latest_posts .content .info {
+.latest_posts .content .info {
   text-align: center;
 }
 
-main .latest_posts .content .info strong {
+.latest_posts .content .info strong {
   font-size: 25px;
 }
 
-main .latest_posts .content .info span {
+.latest_posts .content .info span {
   font-size: 12px;
   display: block;
   color: #abb3b4;
 }
 
-main .latest_posts .content .posts {
+.latest_posts .content .posts {
   margin-top: 30px;
 }
 
-main .latest_posts .content .posts .post {
+.latest_posts .content .posts .post {
   cursor: pointer;
 }
 
-main .latest_posts .content .posts .post .icons .icon {
+.latest_posts .content .posts .post .icons .icon {
   padding: 3px;
   text-align: center;
 }
 
-main .latest_posts .content .posts .post .icons .icon span {
+.latest_posts .content .posts .post .icons .icon span {
   font-size: 12px;
   color: white;
 }
 
-main .latest_posts .content .posts .post .icons .icon:nth-child(1) {
+.latest_posts .content .posts .post .icons .icon:nth-child(1) {
   background-color: #1bbc9b;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .latest_posts .content .posts .post .icons .icon:nth-child(2) {
+.latest_posts .content .posts .post .icons .icon:nth-child(2) {
   background-color: #34495e;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .latest_posts .content .posts .post .icons .icon:nth-child(3) {
+.latest_posts .content .posts .post .icons .icon:nth-child(3) {
   background-color: #34495e;
 }
 
-main .latest_posts .content .posts .post .icons .icon:nth-child(4) {
+.latest_posts .content .posts .post .icons .icon:nth-child(4) {
   background-color: #34495e;
   font-size: 10px;
 }
 
-main .latest_posts .content .posts .post .picture figure {
+.latest_posts .content .posts .post .picture figure {
   width: 220px;
 }
 
-main .latest_posts .content .posts .post .picture figure img {
+.latest_posts .content .posts .post .picture figure img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-main .latest_posts .content .posts .post .description {
+.latest_posts .content .posts .post .description {
   background-color: #f4f5f7;
   height: 132px;
   padding: 0 10px;
@@ -859,7 +851,7 @@ main .latest_posts .content .posts .post .description {
   transition: 1s;
 }
 
-main .latest_posts .content .posts .post .description .cut {
+.latest_posts .content .posts .post .description .cut {
   -webkit-transition: 1s;
   transition: 1s;
   position: absolute;
@@ -872,118 +864,118 @@ main .latest_posts .content .posts .post .description .cut {
           transform: rotate(45deg);
 }
 
-main .latest_posts .content .posts .post .description strong {
+.latest_posts .content .posts .post .description strong {
   font-size: 12px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .latest_posts .content .posts .post .description span {
+.latest_posts .content .posts .post .description span {
   color: #ced6dc;
   display: block;
 }
 
-main .latest_posts .content .posts .post .description span strong {
+.latest_posts .content .posts .post .description span strong {
   font-size: 10px;
 }
 
-main .latest_posts .content .posts .post .description span {
+.latest_posts .content .posts .post .description span {
   font-size: 10px;
 }
 
-main .latest_posts .content .posts .post:hover .icons .icon:nth-child(1) {
+.latest_posts .content .posts .post:hover .icons .icon:nth-child(1) {
   background-color: #34495e;
 }
 
-main .latest_posts .content .posts .post:hover .icons .icon:nth-child(2) {
+.latest_posts .content .posts .post:hover .icons .icon:nth-child(2) {
   background-color: #1bbc9b;
 }
 
-main .latest_posts .content .posts .post:hover .description {
+.latest_posts .content .posts .post:hover .description {
   background-color: #34495e;
 }
 
-main .latest_posts .content .posts .post:hover .description .cut {
+.latest_posts .content .posts .post:hover .description .cut {
   background-color: #34495e;
 }
 
-main .latest_posts .content .posts .post:hover .description strong {
+.latest_posts .content .posts .post:hover .description strong {
   color: white;
 }
 
-main .thefox_design {
+.thefox_design {
   background-color: #f9fafc;
   margin: 40px auto;
 }
 
-main .thefox_design .content {
+.thefox_design .content {
   width: 70%;
   margin: 40px auto;
   padding: 40px 0;
 }
 
-main .thefox_design .content .logo img {
+.thefox_design .content .logo img {
   width: 400px;
   height: 300px;
 }
 
-main .thefox_design .content .info {
+.thefox_design .content .info {
   padding: 10px 10px 10px 80px;
 }
 
-main .thefox_design .content .info strong {
+.thefox_design .content .info strong {
   color: #34495e;
   font-size: 25px;
 }
 
-main .thefox_design .content .info p {
+.thefox_design .content .info p {
   margin-top: 10px;
   font-size: 12px;
   color: #abb3b4;
 }
 
-main .thefox_design .content .info button {
+.thefox_design .content .info button {
   background-color: white;
 }
 
-main .thefox_design .content .info button strong {
+.thefox_design .content .info button strong {
   font-size: 14px;
   color: #34495e;
 }
 
-main .thefox_design .content .info button strong span {
+.thefox_design .content .info button strong span {
   font-size: 18px;
 }
 
-main .thefox_design .content .info button strong span::before {
+.thefox_design .content .info button strong span::before {
   vertical-align: middle !important;
 }
 
-main .thefox_design .content .info button:focus {
+.thefox_design .content .info button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-main .pricing_table {
+.pricing_table {
   margin: 40px auto;
 }
 
-main .pricing_table .content {
+.pricing_table .content {
   width: 70%;
   margin: 40px auto;
 }
 
-main .pricing_table .content .info {
+.pricing_table .content .info {
   margin: 40px auto;
   text-align: center;
 }
 
-main .pricing_table .content .info strong {
+.pricing_table .content .info strong {
   color: #34495e;
   font-size: 30px;
 }
 
-main .pricing_table .content .table {
+.pricing_table .content .table {
   -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
@@ -991,7 +983,7 @@ main .pricing_table .content .table {
   border: 3px solid transparent;
 }
 
-main .pricing_table .content .table .title {
+.pricing_table .content .table .title {
   background-color: #1bbc9b;
   color: white;
   padding: 5px;
@@ -1000,108 +992,108 @@ main .pricing_table .content .table .title {
   transition: 1s;
 }
 
-main .pricing_table .content .table .price {
+.pricing_table .content .table .price {
   background-color: #ecf0f1;
   padding: 5px;
 }
 
-main .pricing_table .content .table .price strong {
+.pricing_table .content .table .price strong {
   font-size: 30px;
 }
 
-main .pricing_table .content .table .price strong sub,
-main .pricing_table .content .table .price strong sup {
+.pricing_table .content .table .price strong sub,
+.pricing_table .content .table .price strong sup {
   font-size: 15px;
 }
 
-main .pricing_table .content .table .features .option {
+.pricing_table .content .table .features .option {
   border: 1px solid #f5e9e9;
   padding: 5px;
 }
 
-main .pricing_table .content .table .features .option span {
+.pricing_table .content .table .features .option span {
   color: #93a2ad;
   font-size: 12px;
 }
 
-main .pricing_table .content .table .footer {
+.pricing_table .content .table .footer {
   background-color: #ecf0f1;
   padding: 10px;
 }
 
-main .pricing_table .content .table .footer button {
+.pricing_table .content .table .footer button {
   -webkit-transition: 1s;
   transition: 1s;
   background-color: #1bbc9b;
   width: 90%;
 }
 
-main .pricing_table .content .table .footer button strong {
+.pricing_table .content .table .footer button strong {
   font-size: 14px;
   color: white;
 }
 
-main .pricing_table .content .table .footer button:focus {
+.pricing_table .content .table .footer button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-main .pricing_table .content .table:hover {
+.pricing_table .content .table:hover {
   border: 3px solid #34495e;
 }
 
-main .pricing_table .content .table:hover .title,
-main .pricing_table .content .table:hover .footer button {
+.pricing_table .content .table:hover .title,
+.pricing_table .content .table:hover .footer button {
   background-color: #34495e;
 }
 
-main .pricing_table .content .table > :not(caption) > * > * {
+.pricing_table .content .table > :not(caption) > * > * {
   padding: 0;
 }
 
-main .pricing_table .content .standard {
+.pricing_table .content .standard {
   -webkit-box-shadow: 2px 1px 20px grey;
           box-shadow: 2px 1px 20px grey;
 }
 
-main .explore_things {
+.explore_things {
   margin: 40px auto;
   background-image: url(../images/building.jpg);
   background-size: 100%;
   width: 100%;
 }
 
-main .explore_things .content {
+.explore_things .content {
   margin: auto;
   width: 70%;
   padding-top: 70px;
 }
 
-main .explore_things .content .description {
+.explore_things .content .description {
   margin-bottom: 30px;
   text-align: center;
 }
 
-main .explore_things .content .description strong {
+.explore_things .content .description strong {
   font-size: 25px;
   color: white;
 }
 
-main .explore_things .content .description strong span {
+.explore_things .content .description strong span {
   font-size: inherit;
   color: #1bbc9b;
 }
 
-main .explore_things .content .description p {
+.explore_things .content .description p {
   font-size: 12px;
   color: white;
 }
 
-main .explore_things .content .sub_images {
-  padding-top: 30px;
+.explore_things .content .sub_images {
+  padding-top: 60px;
 }
 
-main .explore_things .content .sub_images .slick-slide img {
+.explore_things .content .sub_images .slick-slide img {
   max-width: 100%;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -1109,99 +1101,105 @@ main .explore_things .content .sub_images .slick-slide img {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-main .explore_things .content .sub_images .slick-slide.slick-center img {
-  -webkit-transform: scale(2);
-          transform: scale(2);
-}
-
-main .explore_things .content .sub_images .slick-prev,
-main .explore_things .content .sub_images .slick-next {
+.explore_things .content .sub_images .slick-prev,
+.explore_things .content .sub_images .slick-next {
   top: 0;
 }
 
-main .explore_things .content .sub_images .slick-prev {
-  left: 40%;
+.explore_things .content .sub_images .slick-next {
+  right: 43%;
 }
 
-main .explore_things .content .sub_images .slick-next {
-  right: 40%;
+.explore_things .content .sub_images .slick-prev {
+  left: 43%;
 }
 
-main .explore_things .content .sub_images .sub_image {
+.explore_things .content .sub_images .slick-center figure {
+  padding-bottom: 60% !important;
+  margin-top: 0 !important;
+  -webkit-box-shadow: 1px 1px 10px grey;
+          box-shadow: 1px 1px 10px grey;
+  z-index: 2;
+}
+
+.explore_things .content .sub_images .sub_image {
   width: 100%;
 }
 
-main .explore_things .content .sub_images .sub_image figure {
-  margin: auto;
-  width: 350px;
+.explore_things .content .sub_images .sub_image figure {
+  margin-top: 10%;
+  position: relative;
+  padding-bottom: 50%;
 }
 
-main .explore_things .content .sub_images .sub_image figure img {
+.explore_things .content .sub_images .sub_image figure img {
+  position: absolute;
   width: 100%;
+  height: 100%;
 }
 
-main .featured_products {
+.featured_products {
   margin: 40px auto;
   background-color: #f9fafc;
   padding: 30px 0;
 }
 
-main .featured_products .content {
+.featured_products .content {
   width: 70%;
   margin: auto;
   text-align: center;
 }
 
-main .featured_products .content .row {
+.featured_products .content .row {
   height: 400px;
 }
 
-main .featured_products .content strong {
+.featured_products .content strong {
   font-size: 30px;
   color: #34495e;
 }
 
-main .featured_products .content span {
+.featured_products .content span {
   display: block;
   color: #abb3b4;
   font-size: 12px;
 }
 
-main .featured_products .content .cards {
+.featured_products .content .cards {
   margin-top: 20px;
 }
 
-main .featured_products .content .cards .block {
+.featured_products .content .cards .block {
   cursor: pointer;
   width: 100%;
   height: 250px;
 }
 
-main .featured_products .content .cards .block figure {
+.featured_products .content .cards .block figure {
   height: 100%;
   margin: 0;
 }
 
-main .featured_products .content .cards .block figure img {
+.featured_products .content .cards .block figure img {
   width: 100%;
   height: 100%;
 }
 
-main .featured_products .content .cards .block .info {
+.featured_products .content .cards .block .info {
   padding: 10px;
   text-align: left;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .featured_products .content .cards .block .info strong {
+.featured_products .content .cards .block .info strong {
   font-size: 13px;
   display: block;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .featured_products .content .cards .block .info .options a {
+.featured_products .content .cards .block .info .options a {
   color: #34495e;
   font-size: 12px;
   background-color: #b9c5cd;
@@ -1212,58 +1210,58 @@ main .featured_products .content .cards .block .info .options a {
   border-radius: 4px;
 }
 
-main .featured_products .content .cards .block .info .options a span {
+.featured_products .content .cards .block .info .options a span {
   color: white;
   display: inline;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .featured_products .content .cards .block .info .options a span::before {
+.featured_products .content .cards .block .info .options a span::before {
   margin-bottom: 1px;
 }
 
-main .featured_products .content .cards .block:hover .info {
+.featured_products .content .cards .block:hover .info {
   background-color: #34495e;
 }
 
-main .featured_products .content .cards .block:hover .info hr {
+.featured_products .content .cards .block:hover .info hr {
   border: 1px solid grey;
 }
 
-main .featured_products .content .cards .block:hover .info strong {
+.featured_products .content .cards .block:hover .info strong {
   color: white;
 }
 
-main .featured_products .content .cards .block:hover .info .options a:hover {
+.featured_products .content .cards .block:hover .info .options a:hover {
   background-color: #1bbc9b;
 }
 
-main .featured_products .content .cards .block:hover .info .options a span {
+.featured_products .content .cards .block:hover .info .options a span {
   color: white;
 }
 
-main .form {
+.form {
   margin: 40px auto;
 }
 
-main .form .content {
+.form .content {
   margin: auto;
   width: 70%;
 }
 
-main .form .content input {
+.form .content input {
   border: 1px solid #abb3b4;
   width: 100%;
   font-size: 14px;
   padding: 10px;
 }
 
-main .form .content input:focus {
+.form .content input:focus {
   outline: 1px solid #abb3b4;
 }
 
-main .form .content textarea {
+.form .content textarea {
   margin-top: 20px;
   width: 100%;
   color: #abb3b4;
@@ -1271,11 +1269,11 @@ main .form .content textarea {
   resize: none;
 }
 
-main .form .content textarea:focus {
+.form .content textarea:focus {
   outline: 1px solid #abb3b4;
 }
 
-main .form .content button {
+.form .content button {
   margin-top: 20px;
   width: 100%;
   background-color: #abb3b4;
@@ -1283,15 +1281,15 @@ main .form .content button {
   padding: 10px;
 }
 
-main .form .content button strong {
+.form .content button strong {
   color: white;
 }
 
-main .form .content button:hover {
+.form .content button:hover {
   background-color: #1bbc9b;
 }
 
-main .advantages {
+.advantages {
   margin: 40px auto;
   padding: 30px;
   background-image: url(../images/blurred.jpg);
@@ -1299,19 +1297,19 @@ main .advantages {
   background-size: 100%;
 }
 
-main .advantages .content {
+.advantages .content {
   width: 70%;
   margin: auto;
 }
 
-main .advantages .content .box {
+.advantages .content .box {
   cursor: pointer;
   text-align: center;
   background-color: white;
   position: relative;
 }
 
-main .advantages .content .box .icon {
+.advantages .content .box .icon {
   background-color: green;
   width: 50px;
   height: 50px;
@@ -1335,7 +1333,7 @@ main .advantages .content .box .icon {
   transition: 1s;
 }
 
-main .advantages .content .box .icon .outer_layer {
+.advantages .content .box .icon .outer_layer {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -1346,76 +1344,76 @@ main .advantages .content .box .icon .outer_layer {
   transition: 1s;
 }
 
-main .advantages .content .box .icon .outer_layer span {
+.advantages .content .box .icon .outer_layer span {
   line-height: 40px;
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .advantages .content .box .data {
+.advantages .content .box .data {
   padding: 10px;
 }
 
-main .advantages .content .box .data strong {
+.advantages .content .box .data strong {
   color: #34495e;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .advantages .content .box .data p {
+.advantages .content .box .data p {
   font-size: 12px;
   color: #abb3b4;
 }
 
-main .advantages .content .box .data a {
+.advantages .content .box .data a {
   text-decoration: none;
   font-size: 12px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main .advantages .content .box .data a strong {
+.advantages .content .box .data a strong {
   color: #1bbc9b;
 }
 
-main .advantages .content .box:hover .icon {
+.advantages .content .box:hover .icon {
   background-color: #1bbc9b;
 }
 
-main .advantages .content .box:hover .icon .outer_layer {
+.advantages .content .box:hover .icon .outer_layer {
   background-color: #34495e;
 }
 
-main .advantages .content .box:hover .data strong {
+.advantages .content .box:hover .data strong {
   color: #1bbc9b;
 }
 
-main .advantages .content .box:hover .data a strong {
+.advantages .content .box:hover .data a strong {
   color: #34495e;
 }
 
-main .sometext {
+.sometext {
   background-color: white;
 }
 
-main .sometext .content {
+.sometext .content {
   width: 70%;
   margin: auto;
   text-align: center;
 }
 
-main .sometext .content p {
+.sometext .content p {
   color: #abb3b4;
 }
 
-main .sometext .content p:before {
+.sometext .content p:before {
   content: '"';
   margin-right: 10px;
   font-size: 25px;
 }
 
-main .sometext .content p:after {
+.sometext .content p:after {
   content: '"';
   margin-left: 10px;
   font-size: 25px;
