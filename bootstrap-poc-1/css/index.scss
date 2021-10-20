@@ -75,7 +75,7 @@ header {
                         line-height: 56px;
 
                         a {
-                            color: $nav-clr-text;
+                            //color: $nav-clr-text;
                             text-decoration: none;
                             display: block;
                             margin: 0 15px;
@@ -102,8 +102,18 @@ header {
                                 transition: all 0.1s linear;
                             }
                         }
+                        &:first-child{
+                            a{
+                                color:$clr-main;
+                                &:after{
+                                    transform: scale(1) !important;
+                                }
+                            }
+                            
+                        }
                     }
                 }
+                
             }
 
             .nav_options {

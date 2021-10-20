@@ -66,7 +66,6 @@ header .main_nav .content .nav_links ul li {
 }
 
 header .main_nav .content .nav_links ul li a {
-  color: #abb3b4;
   text-decoration: none;
   display: block;
   margin: 0 15px;
@@ -95,6 +94,15 @@ header .main_nav .content .nav_links ul li a:after {
           transform: scale(0);
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
+}
+
+header .main_nav .content .nav_links ul li:first-child a {
+  color: #1bbc9b;
+}
+
+header .main_nav .content .nav_links ul li:first-child a:after {
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
 }
 
 header .main_nav .content .nav_options ul {
