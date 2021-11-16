@@ -4,6 +4,8 @@ const imagePath = "images/";
 const tabsId = document.getElementById("tabs");
 const tabId = document.getElementById("tabId");
 const tabClass = document.getElementsByClassName("tab");
+const sidebar_visible = document.getElementById("sidebar_visible") ;
+const sidebar = document.getElementById("sidebar") ;
 let prevActiveCategory = featured_works_categories.firstElementChild;
 let prevActiveTab = tabClass[0];
 const featured_works_images_array = [{
@@ -114,4 +116,9 @@ tabsId.onclick = (e) => {
     //         tabClass[i].style.borderBottomColor = "white" ;
     //     }
     // }
+}
+
+sidebar.onclick = () => {
+    sidebar.classList.toggle("bi-x");
+    sidebar_visible.classList.toggle("sidebar_visible");
 }

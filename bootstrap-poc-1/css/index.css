@@ -1,4 +1,17 @@
 @charset "UTF-8";
+body {
+  width: 100%;
+  position: relative;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+}
+
 header .links_nav {
   background-color: #34495e;
 }
@@ -34,6 +47,10 @@ header .links_nav .content .social_media_icons a {
 
 header .links_nav .content .social_media_icons a:hover {
   color: white;
+}
+
+header .main_nav {
+  background-color: white;
 }
 
 header .main_nav .content {
@@ -100,7 +117,8 @@ header .main_nav .content .nav_options ul {
   list-style-type: none;
 }
 
-header .main_nav .content .nav_options ul li [class^="bi-"]::before, header .main_nav .content .nav_options ul li [class*=" bi-"]::before {
+header .main_nav .content .nav_options ul li [class^="bi-"]::before,
+header .main_nav .content .nav_options ul li [class*=" bi-"]::before {
   line-height: inherit;
 }
 
@@ -110,29 +128,49 @@ header .main_nav .content .nav_options ul li a {
   color: #abb3b4;
 }
 
+header .options {
+  display: none;
+}
+
+header .reponsive_bar {
+  display: none;
+}
+
+header .sidebar {
+  display: none;
+}
+
+main {
+  width: 100%;
+}
+
 main .main_image {
   position: relative;
 }
 
-main .main_image .image_slider .slick-prev, main .main_image .image_slider .slick-next {
+main .main_image .image_slider .slick-prev,
+main .main_image .image_slider .slick-next {
   background-color: rgba(0, 0, 0, 0.4);
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
 
-main .main_image .image_slider .slick-prev:before, main .main_image .image_slider .slick-next:before {
+main .main_image .image_slider .slick-prev:before,
+main .main_image .image_slider .slick-next:before {
   content: '';
 }
 
-main .main_image .image_slider .slick-prev i, main .main_image .image_slider .slick-next i {
+main .main_image .image_slider .slick-prev i,
+main .main_image .image_slider .slick-next i {
   line-height: 30px;
   font-size: 20px;
   color: white;
   border-radius: 50%;
 }
 
-main .main_image .image_slider .slick-prev i::before, main .main_image .image_slider .slick-next i::before {
+main .main_image .image_slider .slick-prev i::before,
+main .main_image .image_slider .slick-next i::before {
   line-height: inherit;
 }
 
@@ -505,7 +543,7 @@ main .amazing_psd_pack .amazing_img figure img {
 main .photography {
   background-image: url(../images/coding-1.jpg);
   width: 100%;
-  background-size: 100%;
+  background-size: 100% 100%;
   position: relative;
   padding: 100px 0;
 }
@@ -1105,7 +1143,7 @@ main .pricing_table .content .standard {
 main .explore_things {
   margin: 40px auto;
   background-image: url(../images/building.jpg);
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 100%;
 }
 
@@ -1228,7 +1266,7 @@ main .featured_products .content {
   text-align: center;
 }
 
-main .featured_products .content .row {
+main .featured_products .content .col-3 {
   height: 400px;
 }
 
@@ -1372,7 +1410,7 @@ main .advantages {
   padding: 30px;
   background-image: url(../images/blurred.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 main .advantages .content {
@@ -1442,6 +1480,7 @@ main .advantages .content .box .data strong {
 main .advantages .content .box .data p {
   font-size: 12px;
   color: #abb3b4;
+  text-align: justify;
 }
 
 main .advantages .content .box .data a {
