@@ -145,15 +145,30 @@
     margin-top: 10px;
   }
   main .greatness .testimonials .main_content {
+    width: 90%;
+  }
+  main .greatness .testimonials .main_content .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .greatness .testimonials .main_content .row .col {
     width: 100%;
   }
-  main .greatness .testimonials .main_content .col .card {
+  main .greatness .testimonials .main_content .row .col .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .greatness .testimonials .main_content .row .col .row .card {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
-  main .greatness .testimonials .main_content .col .card figure {
+  main .greatness .testimonials .main_content .row .col .row .card figure {
     margin: auto;
   }
   main .amazing_psd_pack .row {

@@ -197,9 +197,13 @@
 
             .testimonials {
                 .main_content {
-                    width: 100%;
-
+                    width:90%;
+                    .row{
+                        flex-direction: column;
                     .col {
+                        width:100%;
+                        .row{
+                            flex-direction:row;
                         .card {
                             flex-direction: column !important;
 
@@ -209,6 +213,8 @@
                         }
                     }
                 }
+                }
+            }
             }
         }
 
