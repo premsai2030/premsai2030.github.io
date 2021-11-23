@@ -13,11 +13,13 @@
   ul {
     padding: 0;
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+  .slick-next {
     width: 20px !important;
     height: 20px !important;
   }
-  .slick-prev i, .slick-next i {
+  .slick-prev i,
+  .slick-next i {
     line-height: 22px !important;
     font-size: 10px !important;
   }
@@ -363,6 +365,218 @@
   }
   footer .last_footer .content .main_things ul li:after {
     content: '';
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  p {
+    text-align: justify;
+  }
+  ul {
+    padding: 0;
+  }
+  header .links_nav {
+    display: none;
+  }
+  header .main_nav {
+    display: none;
+  }
+  header .reponsive_bar {
+    position: absolute;
+    width: 100%;
+    background-color: #34495e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .reponsive_bar .side_bar_icon {
+    color: white;
+    position: absolute;
+  }
+  header .reponsive_bar .side_bar_icon span {
+    font-size: 30px;
+  }
+  header .reponsive_bar .website_info {
+    margin: auto;
+    color: white;
+  }
+  header .reponsive_bar .website_info ul {
+    list-style: none;
+  }
+  header .reponsive_bar .website_info .website_logo figure {
+    margin: 0;
+  }
+  header .reponsive_bar .website_info .website_logo figure img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  header .reponsive_bar .website_info .website_title span {
+    font-size: 2rem;
+  }
+  header .sidebar {
+    color: white;
+    background-color: #34495e;
+    margin-top: 56px;
+    border-top: 1px solid green;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+  header .sidebar .main_links ul {
+    list-style-type: none;
+  }
+  header .sidebar .main_links ul li {
+    text-align: center;
+  }
+  header .sidebar .main_links ul li a {
+    color: white;
+  }
+  header .sidebar .info .content_details ul {
+    list-style-type: none;
+  }
+  header .sidebar .info .content_details ul li {
+    text-align: center;
+  }
+  header .sidebar .info .content_details ul li .content_icon {
+    color: #1bbc9b;
+  }
+  header .sidebar .info .social_icons {
+    color: white;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    text-align: center;
+  }
+  header .sidebar .info .social_icons a {
+    color: white;
+    width: 100%;
+  }
+  header .sidebar_visible {
+    display: block;
+  }
+  main {
+    margin-top: 56px;
+  }
+  main .services {
+    width: 90%;
+  }
+  main .main_overview {
+    padding: 20px 0;
+  }
+  main .main_overview .main_overview_content {
+    width: 90%;
+  }
+  main .greatness .featured_works .content p {
+    text-align: center;
+  }
+  main .greatness .testimonials .content {
+    width: 90%;
+  }
+  main .greatness .testimonials .main_content {
+    width: 90%;
+  }
+  main .amazing_psd_pack .row {
+    width: 90%;
+  }
+  main .amazing_psd_pack .row .amazing_img figure {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  main .photography .twitter_posts .twitter_post .content p {
+    text-align: center;
+  }
+  main .some_fact_fun .content .info p {
+    text-align: center;
+  }
+  main .some_fact_fun .content .options .options_info p {
+    text-align: center;
+  }
+  main .our_things .content {
+    width: 90%;
+  }
+  main .latest_posts .content {
+    width: 90%;
+  }
+  main .latest_posts .content .posts .row .col-6 {
+    width: 50%;
+  }
+  main .latest_posts .content .posts .row .col-6 .post {
+    margin-top: 10px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .icons {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .icons .icon {
+    width: 100%;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .picture figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .description .cut {
+    display: none;
+  }
+  main .thefox_design .content {
+    width: 90%;
+  }
+  main .pricing_table .content {
+    width: 90%;
+  }
+  main .pricing_table .row .col-3 {
+    width: 33.33%;
+  }
+  main .explore_things .content {
+    width: 90%;
+  }
+  main .featured_products .content {
+    width: 90%;
+  }
+  main .featured_products .content .cards .row .col-3 {
+    width: 33.33%;
+  }
+  main .advantages .content {
+    width: 90%;
+  }
+  main .sometext .content {
+    width: 90%;
+  }
+  footer .first_footer .content {
+    width: 70%;
+  }
+  footer .first_footer .content .row .col-3 {
+    width: 50%;
+  }
+  footer .last_footer .content {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .last_footer .content .main_things {
+    margin: auto;
+  }
+  footer .last_footer .content .items {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
