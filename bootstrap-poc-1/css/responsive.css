@@ -579,4 +579,134 @@
     margin: auto;
   }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1399px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  p {
+    text-align: justify;
+  }
+  ul {
+    padding: 0;
+  }
+  header .links_nav .content {
+    width: 90%;
+  }
+  main .services {
+    width: 90%;
+  }
+  main .main_overview {
+    padding: 20px 0;
+  }
+  main .main_overview .main_overview_content {
+    width: 90%;
+  }
+  main .greatness .featured_works .content p {
+    text-align: center;
+  }
+  main .greatness .testimonials .content {
+    width: 90%;
+  }
+  main .greatness .testimonials .main_content {
+    width: 90%;
+  }
+  main .amazing_psd_pack .row {
+    width: 90%;
+  }
+  main .amazing_psd_pack .row .amazing_img figure {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  main .photography .twitter_posts .twitter_post .content p {
+    text-align: center;
+  }
+  main .some_fact_fun .content .info p {
+    text-align: center;
+  }
+  main .some_fact_fun .content .options .options_info p {
+    text-align: center;
+  }
+  main .our_things .content {
+    width: 90%;
+  }
+  main .latest_posts .content {
+    width: 90%;
+  }
+  main .latest_posts .content .posts .row .col-6 {
+    width: 50%;
+  }
+  main .latest_posts .content .posts .row .col-6 .post {
+    margin-top: 10px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .icons {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .icons .icon {
+    width: 100%;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .picture figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  main .latest_posts .content .posts .row .col-6 .post .description .cut {
+    display: none;
+  }
+  main .thefox_design .content {
+    width: 90%;
+  }
+  main .pricing_table .content {
+    width: 90%;
+  }
+  main .pricing_table .row .col-3 {
+    width: 33.33%;
+  }
+  main .explore_things .content {
+    width: 90%;
+  }
+  main .featured_products .content {
+    width: 90%;
+  }
+  main .featured_products .content .cards .row .col-3 {
+    width: 33.33%;
+  }
+  main .advantages .content {
+    width: 90%;
+  }
+  main .sometext .content {
+    width: 90%;
+  }
+  footer .first_footer .content {
+    width: 70%;
+  }
+  footer .first_footer .content .row .col-3 {
+    width: 50%;
+  }
+  footer .last_footer .content {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .last_footer .content .main_things {
+    margin: auto;
+  }
+  footer .last_footer .content .items {
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=responsive.css.map */
