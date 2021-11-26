@@ -171,6 +171,9 @@
   main .greatness .testimonials .main_content .row .col .row .card figure {
     margin: auto;
   }
+  main .amazing_psd_pack {
+    padding: 0;
+  }
   main .amazing_psd_pack .row {
     width: 90%;
     -webkit-box-orient: vertical !important;
@@ -213,6 +216,7 @@
   }
   main .our_things .content {
     width: 90%;
+    padding: 10px 0;
   }
   main .our_things .content .row {
     -webkit-box-orient: vertical !important;
@@ -315,6 +319,9 @@
   }
   main .pricing_table .row .col-3 {
     width: 100%;
+  }
+  main .explore_things .content {
+    width: 90%;
   }
   main .explore_things .content .sub_images .slick-next {
     right: 35%;
@@ -501,6 +508,9 @@
   main .greatness .testimonials .main_content {
     width: 90%;
   }
+  main .amazing_psd_pack {
+    padding: 0;
+  }
   main .amazing_psd_pack .row {
     width: 90%;
   }
@@ -519,6 +529,14 @@
   }
   main .our_things .content {
     width: 90%;
+    padding: 10px 0;
+  }
+  main .our_things .content .our_skills {
+    margin-top: 10px;
+    text-align: center;
+  }
+  main .our_things .content .our_skills .video video {
+    width: 100%;
   }
   main .latest_posts .content {
     width: 90%;

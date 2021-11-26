@@ -136,6 +136,10 @@ header .reponsive_bar {
   display: none;
 }
 
+header .reponsive_bar .side_bar_icon {
+  left: 10px;
+}
+
 header .sidebar {
   display: none;
 }

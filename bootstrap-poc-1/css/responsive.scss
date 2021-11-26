@@ -219,6 +219,7 @@
         }
 
         .amazing_psd_pack {
+            padding:0;
             .row {
                 width: 90%;
                 flex-direction: column !important;
@@ -281,7 +282,7 @@
         .our_things {
             .content {
                 width: 90%;
-
+                padding:10px 0;
                 .row {
                     flex-direction: column !important;
 
@@ -399,6 +400,7 @@
 
         .explore_things {
             .content {
+                width:90%;
                 .sub_images {
                     .slick-next {
                         right: 35%;
@@ -649,6 +651,7 @@
             }
         }
         .amazing_psd_pack{
+            padding:0;
             .row{
                 width:90%;
                 .amazing_img{
@@ -688,6 +691,16 @@
         .our_things{
             .content{
                 width: 90%;
+                padding:10px 0; 
+                .our_skills{
+                    margin-top: 10px;
+                    text-align: center;
+                    .video{
+                        video{
+                            width:100%;
+                        }
+                    }
+                }
             }
         }
         .latest_posts {
