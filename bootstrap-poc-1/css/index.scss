@@ -372,6 +372,12 @@ main {
                     &:focus {
                         box-shadow: none;
                     }
+                    &:hover{
+                        background-color:$clr-main;
+                        strong{
+                            color:$clr-white;
+                        }
+                    }
                 }
             }
         }
@@ -556,6 +562,12 @@ main {
 
                     &:focus {
                         box-shadow: none;
+                    }
+                    &:hover{
+                        background-color:$clr-main;
+                        strong{
+                            color:$clr-white;
+                        }
                     }
 
                 }
@@ -986,16 +998,13 @@ main {
                         }
 
                         span {
-                            color: #ced6dc;
+                            color: #80878b;
                             display: block;
-
+                            font-size: 10px;
                             strong {
                                 font-size: 10px;
                             }
-                        }
-
-                        span {
-                            font-size: 10px;
+                            
                         }
                     }
 
@@ -1021,6 +1030,12 @@ main {
 
                             strong {
                                 color: $clr-white;
+                            }
+                            span{
+                                color:$clr-white !important;
+                                strong{
+                                    color:$clr-white !important;
+                                }
                             }
 
                             background-color:$clr-black;
@@ -1081,7 +1096,14 @@ main {
                     &:focus {
                         box-shadow: none;
                     }
+                    &:hover{
+                        background-color:$clr-main;
+                        strong{
+                            color:$clr-white;
+                        }
+                    }
                 }
+                
             }
         }
     }

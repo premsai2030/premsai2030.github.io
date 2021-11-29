@@ -358,6 +358,14 @@ main .main_overview .main_overview_content .content button:focus {
           box-shadow: none;
 }
 
+main .main_overview .main_overview_content .content button:hover {
+  background-color: #1bbc9b;
+}
+
+main .main_overview .main_overview_content .content button:hover strong {
+  color: white;
+}
+
 main .greatness .featured_works .content {
   text-align: center;
   margin: 40px auto;
@@ -530,6 +538,14 @@ main .amazing_psd_pack .row .content button strong span:before {
 main .amazing_psd_pack .row .content button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+main .amazing_psd_pack .row .content button:hover {
+  background-color: #1bbc9b;
+}
+
+main .amazing_psd_pack .row .content button:hover strong {
+  color: white;
 }
 
 main .amazing_psd_pack .amazing_img figure {
@@ -959,15 +975,12 @@ main .latest_posts .content .posts .post .description strong {
 }
 
 main .latest_posts .content .posts .post .description span {
-  color: #ced6dc;
+  color: #80878b;
   display: block;
-}
-
-main .latest_posts .content .posts .post .description span strong {
   font-size: 10px;
 }
 
-main .latest_posts .content .posts .post .description span {
+main .latest_posts .content .posts .post .description span strong {
   font-size: 10px;
 }
 
@@ -989,6 +1002,14 @@ main .latest_posts .content .posts .post:hover .description .cut {
 
 main .latest_posts .content .posts .post:hover .description strong {
   color: white;
+}
+
+main .latest_posts .content .posts .post:hover .description span {
+  color: white !important;
+}
+
+main .latest_posts .content .posts .post:hover .description span strong {
+  color: white !important;
 }
 
 main .thefox_design {
@@ -1042,6 +1063,14 @@ main .thefox_design .content .info button strong span::before {
 main .thefox_design .content .info button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+main .thefox_design .content .info button:hover {
+  background-color: #1bbc9b;
+}
+
+main .thefox_design .content .info button:hover strong {
+  color: white;
 }
 
 main .pricing_table {
