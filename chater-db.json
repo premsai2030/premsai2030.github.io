@@ -1,49 +1,49 @@
 {
   "myPeople":[
     {
-      username: "premsai2030",
-      latestMessage: "",
-      allMessages:[]
+      "username": "premsai2030",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "prem2030",
-      latestMessage: "",
-      allMessages:[]
+      "username": "prem2030",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "saibro",
-      latestMessage: "",
-      allMessages:[]
+      "username": "saibro",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "memsss",
-      latestMessage: "",
-      allMessages:[]
+      "username": "memsss",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "kk345",
-      latestMessage: "",
-      allMessages:[]
+      "username": "kk345",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "oyyy",
-      latestMessage: "",
-      allMessages:[]
+      "username": "oyyy",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "heyman",
-      latestMessage: "",
-      allMessages:[]
+      "username": "heyman",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "congo",
-      latestMessage: "",
-      allMessages:[]
+      "username": "congo",
+      "latestMessage": "",
+      "allMessages":[]
     },
     {
-      username: "wait",
-      latestMessage: "",
-      allMessages:[]
+      "username": "wait",
+      "latestMessage": "",
+      "allMessages":[]
     },
   ]
 }
