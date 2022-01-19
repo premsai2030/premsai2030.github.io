@@ -1,4 +1,8 @@
 {
+  "app-name":"Chater",
+  "created-on":"12 Nov 2021",
+  "description":"Chater App is basically a chatting app which is very similar to any chatting app now days.",
+  "motto":"To learn the real time problems of creating a chattng app.",
   "myPeople":[
     {
       "username": "premsai2030",
